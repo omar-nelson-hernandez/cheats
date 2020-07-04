@@ -1,0 +1,7 @@
+% general
+
+# Print all processes running in the system
+ps -A -o ppid,pid,etime,args --forest
+
+# Print information about a specific process
+ps -A -o ppid,pid,etime,args | grep -v grep | grep <proc>
